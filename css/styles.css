@@ -1,16 +1,26 @@
 *{
-        font-family: Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 
 body{
     background-color:  rgb(255, 187, 187);
+    width: 100%;
+    height: auto;
  }
+
+ img {
+    width: 100% ;
+    height: auto;
+  }
 
 .logo > h1 {
     color: #ffffff;
     text-shadow: 2px 3px #000000;
     font-family: 'Molle', cursive;
-    font-size: xx-large;
+    font-size: 48px;
 }
 
 a{
@@ -41,14 +51,16 @@ a:hover{
 
 .menu > li{
        list-style: none;
+   
 }
 
 .menu > li > a{
     float: right;
+    
     list-style: none;
     font-size: 30px;
     text-decoration: none;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .menu > li > a:hover{
@@ -61,20 +73,20 @@ a:hover{
 
 /* Container holding the image and the text */
 .containerMain {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
-  
 /* Bottom right text */
 .textBlock {
+    font-size: 48px;
     position: absolute;
-    bottom: 10px;
-    left: 720px;
+    top: 55%;
+    left: 40%;
+    right: 10%;
     background-color:none;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    color: rgb(50, 28, 129);
+    
 }
 
 .tagline{
@@ -82,10 +94,20 @@ a:hover{
     font-family: 'Molle', cursive;
 }
 
-
 .mainText{
-    font-size: x-large;
+    font-size: 24px;
     font-family: 'Molle', cursive;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    margin-top: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .socialMediaLinks{
@@ -95,47 +117,27 @@ a:hover{
 }
 
 .socialMediaLinks > li{
-    padding: 10px 20px;
+    padding: 30px 30px;
 }
 
-.socialMediaLinks > li > a{
-    color: #fff;
+.socialMediaLinks > li > a > i{
+    text-shadow: none;
+    color: rgb(156, 166, 255);
     text-decoration: none;
-}
-
-.socialMediaLinks > li > a >i{
-    color: #fff;
-    text-decoration: none;
-}
-
-p {
-    display: block;
-    margin-inline-start: 30px;
-    margin-inline-end: 30px;
-}
-
-footer {
-    width: 100%;
-    height: 180px;
-    margin-top: 90px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 footer > span{
     color: #fff;
 }
 
-/* Media query for 900px < */
-@media only screen and (max-width: 900px){
-    body{
-        width: 75%;
-        display: flex;
+/* Media query for 1380px < */
+@media only screen and (max-width: 1380px){
+    .mainText{
+        font-size: 16px;
+        
     }
 }
+
 
 /* Media query for 900px < */
 @media only screen and (max-width: 900px){
