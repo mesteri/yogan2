@@ -40,9 +40,7 @@ a:hover{
 }
 
 .menu > li{
-    
-    list-style: none;
-    
+       list-style: none;
 }
 
 .menu > li > a{
@@ -63,7 +61,8 @@ a:hover{
 
 /* Container holding the image and the text */
 .containerMain {
-    position: relative;
+    width: 1440px;
+    margin: 0 auto;
 }
 
   
