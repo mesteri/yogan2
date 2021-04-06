@@ -82,15 +82,24 @@ img {
     height: auto;
   }
 
-/* Textbox in the right corner of the picture */
-.textBlock {
+/* Textbox in the right corner of the 1st picture */
+.textBlock1 {
     position: absolute;
     top: 55%;
     left: 40%;
     right: 2%;
     background-color:none;
-    color: rgb(50, 28, 129);
-    
+    color: rgb(50, 28, 129, 0);
+}
+
+/* Textbox in the left corner of the 2nd picture */
+.textBlock2 {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    right: 2%;
+    background-color:none;
+    color: rgb(50, 28, 129, 0);
 }
 
 .tagline{
@@ -125,6 +134,7 @@ footer {
 }
 
 .socialMediaLinks > li > a > i{
+    font-size: 46px;
     text-shadow: none;
     color: rgb(156, 166, 255);
     text-decoration: none;
