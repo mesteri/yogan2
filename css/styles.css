@@ -206,6 +206,12 @@ footer > span{
     }
 }
 
+/* Media query for 555px < */
+@media only screen and (max-width: 555px){
+    .split5050{
+        flex-direction: column;
+    }
+
 /* Media query for 475px < */
 @media only screen and (max-width: 475px){
     .tagline{
