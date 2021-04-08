@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 0;
     position: relative;
     font-family: Arial, Helvetica, sans-serif ;
@@ -50,12 +51,10 @@ a:hover{
 
 .menu > li{
        list-style: none;
-   
 }
 
 .menu > li > a{
     float: right;
-    
     list-style: none;
     font-size: 30px;
     text-decoration: none;
@@ -70,46 +69,29 @@ a:hover{
     color: rgb(140, 0, 140);
 }
 
-/* Container holding the image and the text */
-.containerMain {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-img {
-    width: 100% ;
-    height: auto;
-  }
-
-/* Textbox in the right corner of the 1st picture */
-.textBlock1 {
-    position: absolute;
-    top: 55%;
-    left: 40%;
-    right: 2%;
-    background-color:none;
-    color: rgb(50, 28, 129, 0);
-}
-
-/* Textbox in the left corner of the 2nd picture */
-.textBlock2 {
-    position: absolute;
-    top: 55%;
-    left: 40%;
-    right: 2%;
-    background-color:none;
-    color: rgb(50, 28, 129, 0);
-}
-
 .tagline{
+    color: rgb(140, 0, 140);
+    text-shadow: 2px 3px #ffffff;
+    margin-top: 40px;
     font-size: 48px;
     font-family: 'Molle', cursive;
 }
 
-.mainText{
-    font-size: 24px;
-    font-family: 'Molle', cursive;
+/* MAIN TEXT            MAIN TEXT               MAIN TEXT */
+
+.split5050{
+    color: rgb(140, 0, 140);
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lucida Sans';
+    
+}
+
+.split5050 > img{
+    width: 50%;
+    height: 100%;
+   
 }
 
 footer {
@@ -121,6 +103,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+footer > span{
+    color: #fff;
 }
 
 .socialMediaLinks{
@@ -140,17 +126,16 @@ footer {
     text-decoration: none;
 }
 
-footer > span{
-    color: #fff;
-}
-
 /* Media query for 1546px < */
 @media only screen and (max-width: 1546px){
     .tagline{
         font-size: 46px;
     }
     .mainText{
-        font-size: 17px;
+        font-size: 20px;
+    }
+    .split5050{
+        font-size: 20px;
     }
 }
 
@@ -160,7 +145,10 @@ footer > span{
         font-size: 42px;
     }
     .mainText{
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .split5050{
+        font-size: 18px;
     }
 }
 
@@ -170,7 +158,10 @@ footer > span{
         font-size: 36px;
     }
     .mainText{
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .split5050{
+        font-size: 16px;
     }
 }
 
@@ -178,9 +169,13 @@ footer > span{
 @media only screen and (max-width: 920px){
     .tagline{
         font-size: 30px;
+        margin-top: 80px;
     }
     .mainText{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .split5050{
+        font-size: 14px;
     }
 }
 
@@ -190,7 +185,10 @@ footer > span{
         font-size: 24px;
     }
     .mainText{
-        font-size: 10px;
+        font-size: 12px;
+    }
+    .split5050{
+        font-size: 12px;
     }
 }
 
@@ -198,8 +196,42 @@ footer > span{
 @media only screen and (max-width: 600px){
     .tagline{
         font-size: 18px;
+        margin-top: 120px;
     }
     .mainText{
-        font-size: 8px;
+        font-size: 10px;
     }
+    .split5050{
+        font-size: 10px;
+    }
+}
+
+/* Media query for 475px < */
+@media only screen and (max-width: 475px){
+    .tagline{
+        font-size: 14px;
+    }
+    .mainText{
+        font-size: 9px;
+    }
+    .split5050{
+        font-size: 9px;
+    }
+    .split5050{
+        flex-direction: column;
+    }
+    *{
+        padding-left: 5px;
+    }
+    *{    
+        padding-right: 5px;
+    }
+    .socialMediaLinks > li{
+        padding: 15px 15px;
+    }
+    
+    .socialMediaLinks > li > a > i{
+        font-size: 32px;
+    }
+ 
 }
