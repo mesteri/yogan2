@@ -211,7 +211,7 @@ footer > span{
     .split5050{
         flex-direction: column;
     }
-
+}
 /* Media query for 475px < */
 @media only screen and (max-width: 475px){
     .tagline{
@@ -239,5 +239,4 @@ footer > span{
     .socialMediaLinks > li > a > i{
         font-size: 32px;
     }
- 
-}
+} 
